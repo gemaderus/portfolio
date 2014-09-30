@@ -1,0 +1,25 @@
+.media {
+  @extend .clearfix;
+  margin: 0;
+  p:first-child {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+.media-image {
+  float: left; 
+  margin-right: 20px;
+}
+  
+.media-aside {
+  float: right;
+  margin-left: 20px;
+}
+
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+  width: 10000px;
+}

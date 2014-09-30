@@ -1,0 +1,16 @@
+.fluid {
+  text-align: justify;
+  
+  &:after {
+      content: "";
+      display: inline-block;
+      width: 100%;    
+  }
+
+  > li {
+    display:inline-block;
+    *display:inline;
+    text-align: left;
+    zoom:1;
+  }
+}

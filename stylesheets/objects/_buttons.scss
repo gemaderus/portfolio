@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base button styles.
+ *
+ */
+
+.button {
+    @include transition(background-color 0.3s ease);
+    @include appearance(none);
+    border-radius: $button-round;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: $button-font-size;
+    margin: 0;
+    padding: 1.8*$button-padding 8*$button-padding;
+    vertical-align: middle;
+    white-space: nowrap;
+    &.with-shadow {
+        @include box-shadow(0px 2px 0px 0px $orange-dark);
+    }
+}
+
+.button {
+    &, &:hover {
+        text-decoration:none;
+    }
+    &:active, &:focus {
+        outline:none;
+    }
+}
+
+/*------------------------------------*\
+    $FUNCTIONS
+\*------------------------------------*/
+/**
+ * Button function modifiers.
+ */
+.button {
+    background-color: $button-background;
+    color: $button-color;
+    &:hover {
+        background-color: darken($button-background, 5%);
+    }
+}
+
+/**
+ * Inactive, disabled buttons.
+ * 
+ */
+
+.button {
+    &.is-inactive, &.is-disabled {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            background-color:$button-background-disabled;
+            color: $button-color-disabled;
+            @include forbidden-select;
+        }
+    }
+}

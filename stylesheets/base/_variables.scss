@@ -1,0 +1,41 @@
+/* Colors */
+
+$black: #222;
+$orange: #ee3805;
+$orange-dark: #ba2800;
+$grey: #999;
+$grey-light: #ccc;
+$grey-lighter: #ddd;
+$grey-lightest: #F8F8F8;
+$white: #fff;
+
+/* Buttons */
+$button-font-size: 1em;
+$button-round: 2px;
+$button-padding: 10px;
+$button-background: $orange;
+$button-color: $white;
+
+$button-background-disabled: $grey;
+$button-color-disabled: $white;
+
+/* Fonts */
+$base-font-family: "museo-sans", Helvetica, sans-serif;
+$museo-light: 100;
+$museo-regular: 300;
+$museo-bold: 700;
+
+$base-font-size: 16px !default; // Override default set in Compass' Vertical Rhythm partial.
+$base-line-height: 24px !default; // Override default set in Compass' Vertical Rhythm partial.
+
+/* Headings */
+$h1-font-size: 2    * $base-font-size !default;
+$h2-font-size: 1.5  * $base-font-size !default;
+$h3-font-size: 1.2  * $base-font-size !default;
+$h4-font-size: 1    * $base-font-size !default;
+$h5-font-size: $base-font-size - 3 !default;
+$h6-font-size: 0.67 * $base-font-size !default;
+
+/* Links */
+$link-time-transition: 0.3s;
+

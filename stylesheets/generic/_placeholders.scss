@@ -1,0 +1,38 @@
+%bottom-line {
+  border-bottom: 1px solid $grey-light;
+}
+
+%clear-inline-space {
+  font-family: sans-serif;
+  letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+  *letter-spacing: normal; /* reset IE < 8 */
+  *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+}
+
+%reset-inline {
+  font-family: $base-font-family;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+%text-replacement {
+  border: 0;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+}
+
+%museo-light {
+  font-family: $base-font-family;
+  font-weight: $museo-light;
+}
+
+%museo-regular {
+  font-family: $base-font-family;
+  font-weight: $museo-regular;
+}
+
+%museo-bold {
+  font-family: $base-font-family;
+  font-weight: $museo-bold;
+}

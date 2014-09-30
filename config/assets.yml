@@ -1,0 +1,5 @@
+gzip_assets: on
+    
+stylesheets:
+  main:
+    - public/stylesheets/style.css

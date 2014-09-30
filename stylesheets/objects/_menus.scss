@@ -1,0 +1,52 @@
+/**
+ *
+
+  <ul class="menu">
+    <li><a href=#>Home</a></li>
+    <li><a href=#>About</a></li>
+    <li><a href=#>Portfolio</a></li>
+    <li><a href=#>Contact</a></li>
+  </ul>
+ 
+ */
+ 
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  list-style:none;
+  margin:0;
+  padding: 0;
+  @extend .clearfix;
+  > li {
+    display:list-item;
+    > a {
+      display:block;
+    }
+  }
+}
+
+
+/**
+ *
+
+  <ul class="menu inline">
+    <li><a href=#>Home</a></li>
+    <li><a href=#>About</a></li>
+    <li><a href=#>Portfolio</a></li>
+    <li><a href=#>Contact</a></li>
+  </ul>
+ 
+ */
+
+.inline {
+  > li {
+    &, > a {
+      display:inline-block;
+      *display:inline;
+      zoom:1;
+    }
+  }
+}

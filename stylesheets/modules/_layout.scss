@@ -1,0 +1,44 @@
+* {
+    @include box-sizing(border-box);
+    margin-top: 0;
+}
+
+html, body {
+    @include museo-regular;
+    line-height: 1.5;
+}
+
+.box {
+    @extend .clearfix;
+    @include center-block;
+    padding: 0 20px;
+}
+
+.row {
+    @include clear-inline-space;
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.row {
+    word-spacing: -0.43em;
+}
+
+.column {
+    @include reset-inline;
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    letter-spacing: normal;
+    text-rendering: auto;
+    vertical-align: top;
+    word-spacing: normal;
+    zoom: 1;
+}
+
+strong {
+    @include museo-bold;
+}

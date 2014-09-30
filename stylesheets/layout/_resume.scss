@@ -1,0 +1,117 @@
+.resume {
+    @extend %bottom-line;
+    padding: 10px;
+
+    .column {
+        &:after {
+            @extend %bottom-line;
+            content: '';
+            display: block;
+            height: 10px;
+            margin-bottom: 2 * $base-line-height;
+            width: 100px;
+        }
+
+        &.last {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    p {
+        margin-bottom: $base-line-height;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    .block {
+        margin-bottom: 2 * $base-line-height;
+        &:last-child {
+            margin-bottom: $base-line-height;
+        }
+    }
+}
+
+.resume {
+    @include min-screen(781px) {
+        padding: 20px;
+        padding-top: 2 * $base-line-height;
+
+        .box {
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        .column {
+            @include clear-inline-space;
+            margin-right: 10%;
+            width: 45%;
+            
+            &:after {
+                display: none;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            > * {
+                @include reset-inline;
+            }
+
+        }
+    }
+}
+
+.resume-header {
+    @include reset-inline;
+    margin: 2 * $base-line-height 0;
+    width: 100%;
+    
+    &:after {
+        @extend %bottom-line;
+        content: '';
+        display: block;
+        height: 1px;
+        margin-bottom: 2 * $base-line-height;
+        width: 100px;
+    }
+
+    .brand-resume, .title-resume {
+        display: table-cell;
+        height: 100px;
+        vertical-align: middle;
+    }
+    .title-resume {
+        padding-left: 20px;
+    }
+    .brand-resume {
+        @extend .glyph;
+        text-align: center;
+        width: 100px;
+    }
+    .links-resume {
+        display: block;
+        margin: 2 * $base-line-height 0;
+    }
+    .me-brand-resume {
+        line-height: 1;
+    }
+
+    @include min-screen(781px) {
+        margin-top: 0;
+        &:after {
+            display: none;
+        }
+        .title-resume {
+            padding: 0 40px;
+        }
+        .links-resume {
+            display: table-cell;
+            height: 100px;
+            margin: 0;
+            vertical-align: middle;
+        }
+    }
+}

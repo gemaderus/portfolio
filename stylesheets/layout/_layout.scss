@@ -12,10 +12,17 @@
 html, body {
     line-height: 1.5;
 }
+body {
+  font-family: "adelle-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444;
+}
 
 .container {
-  width: 960px;
+  width: 800px;
   margin: auto;
+  padding: 50px 0;
 }
 
 .avatar {
@@ -23,20 +30,59 @@ html, body {
   height: 200px;
   border-radius: 50%;
   display: block;
-  border: 5px solid gray;
-}
-
-.avatar, .content, .icons, .sign{
   margin: auto;
 }
 
 .content {
-  width: 50%;
+  font-size: 24px;
+  margin: auto;
+  margin-bottom: 90px;
 }
+
+.lead {
+  font-family: "adelle-sans",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  margin: 0;
+}
+
 
 .icon-uniE60B, .icon-twitter, .icon-github {
   font-size: 30px;
+  
 }
-.icons, .content, .avatar {
-  margin-top: 30px;
+
+.icons, .avatar, .lead {
+  margin-bottom: 30px;
+}
+
+.icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > li {
+    margin-right: 1em;
+    display: inline-block;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.copy, .icons, .lead {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #E93604;
+
+  &:hover {
+    text-decoration: underline;
+
+  }
+}
+.copy {
+  color: #999;
+  font-size: 20px;
 }

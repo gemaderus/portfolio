@@ -1,116 +1,81 @@
-.resume {
-    @extend %bottom-line;
-    padding: 10px;
-
-    .column {
-        &:after {
-            @extend %bottom-line;
-            content: '';
-            display: block;
-            height: 10px;
-            margin-bottom: 2 * $base-line-height;
-            width: 100px;
-        }
-
-        &.last {
-            &:after {
-                display: none;
-            }
-        }
-    }
-    p {
-        margin-bottom: $base-line-height;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    
-    .block {
-        margin-bottom: 2 * $base-line-height;
-        &:last-child {
-            margin-bottom: $base-line-height;
-        }
-    }
-}
 
 .resume {
-    @include min-screen(781px) {
-        padding: 20px;
-        padding-top: 2 * $base-line-height;
+  padding: 10px;
 
-        .box {
-            margin: 0 auto;
-            width: 960px;
-        }
-
-        .column {
-            @include clear-inline-space;
-            margin-right: 10%;
-            width: 45%;
-            
-            &:after {
-                display: none;
-            }
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            > * {
-                @include reset-inline;
-            }
-
-        }
-    }
-}
-
-.resume-header {
-    @include reset-inline;
-    margin: 2 * $base-line-height 0;
-    width: 100%;
-    
+  .column {
     &:after {
-        @extend %bottom-line;
-        content: '';
-        display: block;
-        height: 1px;
-        margin-bottom: 2 * $base-line-height;
-        width: 100px;
+      content: '';
+      display: block;
+      height: 10px;
+      width: 100px;
     }
 
-    .brand-resume, .title-resume {
-        display: table-cell;
-        height: 100px;
-        vertical-align: middle;
+    &.last {
+      &:after {
+        display: none;
+      }
     }
-    .title-resume {
-        padding-left: 20px;
-    }
-    .brand-resume {
-        text-align: center;
-        width: 100px;
-    }
-    .links-resume {
-        display: block;
-        margin: 2 * $base-line-height 0;
-    }
-    .me-brand-resume {
-        line-height: 1;
-    }
+  }
 
-    @include min-screen(781px) {
-        margin-top: 0;
-        &:after {
-            display: none;
-        }
-        .title-resume {
-            padding: 0 40px;
-        }
-        .links-resume {
-            display: table-cell;
-            height: 100px;
-            margin: 0;
-            vertical-align: middle;
-        }
+  p {
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 }
+
+.me-brand-resume {
+  color: #E93604;
+  line-height: 1;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row, .block, .last, .resume-header {
+  margin-bottom: 30px;
+}
+
+.last:before {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #444;
+  margin-bottom: 30px;
+}
+
+.row {
+  &:after, &:before {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .column {
+    float: left;
+    margin-right: 6%;
+    width: 47%;
+  }
+
+  .last {
+    margin-right: 0;
+  }
+
+  .last:before {
+    display: none;
+  }
+}
+
+
+

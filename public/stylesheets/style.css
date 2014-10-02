@@ -1,4 +1,3 @@
-/* Variables and normalize.css */
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -307,74 +306,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-top: 0; }
-
-html, body {
-  line-height: 1.5; }
-
-body {
-  font-family: "adelle-sans",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #444; }
-
-.container {
-  width: 800px;
-  margin: auto;
-  padding: 50px 0; }
-
-.avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: block;
-  margin: auto; }
-
-.content {
-  font-size: 24px;
-  margin: auto;
-  margin-bottom: 90px; }
-
-.lead {
-  font-family: "adelle-sans",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  margin: 0; }
-
-.icon-uniE60B, .icon-twitter, .icon-github {
-  font-size: 30px; }
-
-.icons, .avatar, .lead {
-  margin-bottom: 30px; }
-
-.icons {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-.icons > li {
-  margin-right: 1em;
-  display: inline-block; }
-.icons > li:last-child {
-  margin-right: 0; }
-
-.copy, .icons, .lead {
-  text-align: center; }
-
-a {
-  text-decoration: none;
-  color: #E93604; }
-a:hover {
-  text-decoration: underline; }
-
-.copy {
-  color: #999;
-  font-size: 20px; }
-
 @font-face {
   font-family: 'icomoon';
   src: url("/fonts/icomoon.eot?-vi840a");
@@ -402,3 +333,163 @@ a:hover {
 
 .icon-github:before {
   content: "\e60c"; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0; }
+
+html, body {
+  line-height: 1.5; }
+
+body {
+  background-color: #F9FBFA;
+  color: #444;
+  font-family: "adelle-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+a {
+  text-decoration: none;
+  color: #E93604; }
+a:hover {
+  text-decoration: underline; }
+
+.container {
+  margin: auto;
+  max-width: 800px;
+  padding: 50px 20px; }
+
+.container.wide {
+  max-width: 960px; }
+
+.avatar {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  height: 100px;
+  margin: auto;
+  width: 100px; }
+
+.content {
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 90px;
+  padding-bottom: 15px; }
+
+.lead {
+  font-family: "adelle-sans",sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0; }
+
+.icon-uniE60B, .icon-twitter, .icon-github {
+  font-size: 30px; }
+
+.icons, .avatar, .lead {
+  margin-bottom: 30px; }
+
+.icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+.icons:before {
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  border: 1px solid #999;
+  bottom: 250%;
+  content: '';
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  width: 5%; }
+.icons > li {
+  margin-right: 1em;
+  display: inline-block; }
+.icons > li:last-child {
+  margin-right: 0; }
+
+.copy, .icons, .lead {
+  text-align: center; }
+
+.copy {
+  color: #999;
+  font-size: 16px; }
+
+.social {
+  color: #444; }
+.social:hover {
+  color: #E93604;
+  text-decoration: none; }
+
+@media all and (min-width: 321px) {
+  .avatar {
+    width: 200px;
+    height: 200px; }
+
+  .content {
+    font-size: 24px; }
+
+  .lead {
+    font-size: 60px; }
+
+  .copy {
+    font-size: 20px; } }
+.resume {
+  padding: 10px; }
+.resume .column:after {
+  content: '';
+  display: block;
+  height: 10px;
+  width: 100px; }
+.resume .column.last:after {
+  display: none; }
+.resume p:last-child {
+  margin-bottom: 0; }
+
+.me-brand-resume {
+  color: #E93604;
+  line-height: 1;
+  font-size: 30px;
+  padding-bottom: 20px; }
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.row, .block, .last, .resume-header {
+  margin-bottom: 30px; }
+
+.last:before {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #444;
+  margin-bottom: 30px; }
+
+.row:after, .row:before {
+  content: '';
+  display: table; }
+.row:after {
+  clear: both; }
+
+@media all and (min-width: 768px) {
+  .column {
+    float: left;
+    margin-right: 6%;
+    width: 47%; }
+
+  .last {
+    margin-right: 0; }
+
+  .last:before {
+    display: none; } }

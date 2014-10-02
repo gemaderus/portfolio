@@ -1,8 +1,5 @@
-
-
-/* Variables and normalize.css */
+@import "compass";
 @import "base/normalize";
-
-@import "layout/layout";
-
 @import "vendor/icomoon";
+@import "layout/layout";
+@import "layout/resume";

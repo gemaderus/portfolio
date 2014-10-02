@@ -1,56 +1,65 @@
-@mixin box-sizing($box-model) {
-  -webkit-box-sizing: $box-model; // Safari <= 5
-     -moz-box-sizing: $box-model; // Firefox <= 19
-          box-sizing: $box-model;
-}
-
 * {
-    @include box-sizing(border-box);
-    margin-top: 0;
+  @include box-sizing(border-box);
+  margin-top: 0;
 }
 
 html, body {
-    line-height: 1.5;
+  line-height: 1.5;
 }
+
 body {
+  background-color: #F9FBFA;
+  color: #444;
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: #E93604;
+
+  &:hover {
+    text-decoration: underline;
+
+  }
 }
 
 .container {
-  width: 800px;
   margin: auto;
-  padding: 50px 0;
+  max-width: 800px;
+  padding: 50px 20px;
+}
+
+.container.wide {
+  max-width: 960px;
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  @include border-radius(50%);
   display: block;
+  height: 100px;
   margin: auto;
+  width: 100px;
 }
 
 .content {
-  font-size: 24px;
+  font-size: 18px;
   margin: auto;
   margin-bottom: 90px;
+  padding-bottom: 15px;
 }
 
 .lead {
   font-family: "adelle-sans",sans-serif;
+  font-size: 40px;
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
   margin: 0;
 }
 
-
 .icon-uniE60B, .icon-twitter, .icon-github {
   font-size: 30px;
-  
 }
 
 .icons, .avatar, .lead {
@@ -61,9 +70,23 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  > li {
-    margin-right: 1em;
+  position: relative;
+  
+  &:before {
+    @include translate(-50%, 0);
+    border: 1px solid #999;
+    bottom: 250%;
+    content: '';
     display: inline-block;
+    left: 50%;
+    position: absolute;
+    width: 5%;
+  }
+
+  > li {
+      margin-right: 1em;
+      display: inline-block;
+
     &:last-child {
       margin-right: 0;
     }
@@ -73,16 +96,38 @@ body {
 .copy, .icons, .lead {
   text-align: center;
 }
-a {
-  text-decoration: none;
-  color: #E93604;
 
-  &:hover {
-    text-decoration: underline;
-
-  }
-}
 .copy {
   color: #999;
-  font-size: 20px;
+  font-size: 16px;
 }
+
+.social {
+  color: #444;
+  
+  &:hover {
+    color: #E93604;
+    text-decoration: none;
+  }
+}
+
+@media all and (min-width: 321px) {
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .content {
+    font-size: 24px;
+  }
+
+  .lead {
+    font-size: 60px;
+  }
+
+  .copy {
+    font-size: 20px;
+  }
+}
+
+ 

@@ -1,0 +1,12 @@
+# Exclude files that don't need to be on the server
+# Used by rsync when deploying code to the server
+.excludes
+.sass-cache
+.bundle
+.git
+.gitignore
+log/
+tmp/
+spec/
+stylesheets/
+Guardfile

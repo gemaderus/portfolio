@@ -433,6 +433,9 @@ a:hover {
   padding: 15px 60px;
   border: none;
   display: inline-block; }
+.button:hover {
+  text-decoration: none;
+  background-color: #CF3000; }
 
 .resume-link {
   text-align: center;

@@ -46,8 +46,7 @@ a {
 .content {
   font-size: 18px;
   margin: auto;
-  margin-bottom: 90px;
-  padding-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 .lead {
@@ -70,17 +69,14 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
   
   &:before {
-    @include translate(-50%, 0);
     border: 1px solid #999;
-    bottom: 250%;
     content: '';
-    display: inline-block;
-    left: 50%;
-    position: absolute;
-    width: 5%;
+    display: block;
+    margin: auto;
+    width: 38px;
+    margin-bottom: 45px;
   }
 
   > li {
@@ -109,6 +105,25 @@ a {
     color: #E93604;
     text-decoration: none;
   }
+}
+
+.button {
+  border-radius: 4px;
+/* Rectangle 6: */
+  background: #E93604;
+  -moz-box-shadow:    0px 3px 0px 0px #8F534C;
+  box-shadow:         0px 3px 0px 0px #8F534C;
+  color: white;
+  outline: none;
+  font-size: 24px;
+  padding: 15px 60px;
+  border: none;
+  display: inline-block;
+}
+
+.resume-link {
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 @media all and (min-width: 321px) {

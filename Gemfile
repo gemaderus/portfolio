@@ -17,4 +17,5 @@ group :development, :test do
   gem 'rack-livereload'
   gem 'guard-jammit'
   gem "compass", '~> 0.13.alpha.4'
+  gem 'mina'
 end

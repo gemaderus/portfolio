@@ -3,15 +3,15 @@ require 'mina/rails'
 require 'mina/git'
 require 'mina/rbenv'
 
-set :domain, '146.185.183.46'
-set :deploy_to, '/var/www/gemaderus-portfolio'
+set :domain, 'blato03'
+set :deploy_to, '/var/www/gemaderus.com'
 set :repository, 'git@github.com:gemaderus/portfolio.git'
 set :branch, 'master'
 
 set :shared_paths, ['log']
 
 set :user, 'ubuntu'
-set :port, '2222'
+set :port, '22'
 set :forward_agent, true
 
 task :environment do

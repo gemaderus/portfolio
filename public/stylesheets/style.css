@@ -345,7 +345,7 @@ html, body {
 body {
   background-color: #F9FBFA;
   color: #444;
-  font-family: "adelle-sans",sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400; }
 
@@ -378,7 +378,7 @@ a:hover {
   margin-bottom: 45px; }
 
 .lead {
-  font-family: "adelle-sans",sans-serif;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;

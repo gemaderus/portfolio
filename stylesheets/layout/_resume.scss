@@ -1,4 +1,3 @@
-
 .resume {
   padding: 10px;
 
@@ -40,42 +39,4 @@
 .row, .block, .last, .resume-header {
   margin-bottom: 30px;
 }
-
-.last:before {
-  content: '';
-  display: inline-block;
-  width: 100px;
-  height: 1px;
-  background-color: #444;
-  margin-bottom: 30px;
-}
-
-.row {
-  &:after, &:before {
-    content: '';
-    display: table;
-  }
-
-  &:after {
-    clear: both;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .column {
-    float: left;
-    margin-right: 6%;
-    width: 47%;
-  }
-
-  .last {
-    margin-right: 0;
-  }
-
-  .last:before {
-    display: none;
-  }
-}
-
-
 

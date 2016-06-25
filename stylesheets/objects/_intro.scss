@@ -1,0 +1,29 @@
+.Intro {
+  background-color: $main-color;
+  display: none;
+
+  .Container {
+    padding-top: 0;
+  }
+  
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.Intro-content {
+  color: $white;
+  margin: auto;
+  max-width: 590px;
+  text-align: center;
+
+  h2 {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    h2 {
+      font-size: 36px;
+    }
+  }
+}

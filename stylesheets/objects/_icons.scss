@@ -1,0 +1,35 @@
+/*
+
+Icons
+-----
+
+Icons classes built on sprites or svg. Use the i tag as acronym of icon. Hilarious!
+
+    <i class="icon-arrow-left"></i>
+
+*/
+
+[class^="icon"] {
+    @include text-replacement;
+    display: inline-block;
+}
+
+.icon-small {
+    height: 20px;
+    width: 20px;
+}
+
+.icon-medium {
+    height: 24px;
+    width: 24px;
+}
+
+.icon-large {
+    height: 48px;
+    width: 48px;
+}
+
+.icon-arrow {
+  fill: $base-color;
+  vertical-align: middle;
+}

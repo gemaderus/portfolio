@@ -1,0 +1,36 @@
+/*
+
+Is Hidden
+---------
+
+Hides an element, normally remove after some user interaction through javascript.
+
+    <div class="is-hidden">You can't see me!</div>
+
+*/
+
+.is-hidden {
+  display: none;
+}
+
+.visibility {
+  display: block;
+}
+
+.t-visibility {
+  @include screen($tablet, $desktop - 1) {
+    display: block;
+  }
+}
+
+.d-visibility {
+  @include min-screen($desktop) {
+    display: block;
+  }
+}
+
+.d-is-hidden {
+  @include min-screen($desktop) {
+    display: none;
+  }
+}

@@ -1,0 +1,63 @@
+.Projects-intro {
+  margin-bottom: 30px;
+
+  h2 {
+    margin-bottom: 30px;
+
+    a {
+      color: $base-color;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 80px;
+  }
+}
+
+.Projects-intro-link {
+  color: $base-color;
+  text-decoration: underline;
+}
+
+.Projects-landing {
+  display: block;
+  max-width: 100%;
+}
+
+.Projects-image-holder {
+  display: flex;
+}
+
+.Projects-items {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Projects-item.large{
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+
+.Projects-item.small {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.Projects-image {
+  max-width: 100%
+}
+
+.Grid-item--projects {
+  height: auto;
+
+  &:last-of-type {
+    img {
+      margin: auto;
+
+      @media screen and (min-width: $tablet) {
+        margin-left: auto;
+      }
+    }
+  }
+}

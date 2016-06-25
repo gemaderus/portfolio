@@ -1,0 +1,13 @@
+.Container {
+  margin: auto;
+  max-width: 1160px;
+  padding: 30px 20px; 
+
+  @media screen and (min-width: $tablet) {
+    padding: 80px 40px;
+  }
+}
+
+.Container--small {
+  max-width: 960px;
+} 

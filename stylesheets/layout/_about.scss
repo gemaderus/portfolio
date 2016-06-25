@@ -1,0 +1,26 @@
+.About {
+  text-align: center;
+}
+
+.Content-about {
+  a {
+    color: $main-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.Lead {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.Resume-link a {
+  font-size: 20px;
+}

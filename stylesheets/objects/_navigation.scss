@@ -1,0 +1,103 @@
+// Base horizontal navigation
+// -----------
+
+// <nav>
+//   <ul class="Navigation">
+//     <li>
+//       <a href="#">Works</a>
+//     </li>
+//     <li>
+//       <a href="#">About</a>
+//     </li>
+//     <li>
+//       <a href="mailto: hi@gemaderus.com">Contact</a>
+//     </li>
+//   </ul>
+// </nav>
+
+.Navigation {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 10;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    position: static;
+    width: auto;
+    flex: 1;
+  }
+}
+
+.Navigation-items {
+  background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 100%;
+
+  li {
+    border-bottom: 1px solid $white;
+    transition: background 0.3s ease;
+
+    &:first-child {
+      border-top: 1px solid $white;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    width: auto;
+
+    li {
+      border-bottom: 0;
+      margin-right: 70px;
+      padding: 0;
+
+      &:first-child {
+        border-top: 0;
+      }
+      &:hover {
+        background-color: initial;
+      }
+    }
+  }
+}
+
+.Navigation-link {
+  color: $white;
+  display: block;
+  font-size: 18px;
+  padding: 20px;
+  transition: color 0.3s ease;
+  width: 100%;
+
+  &:hover {
+    color: $main-color;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+
+    &:hover {
+    color: $white;
+  }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+} 

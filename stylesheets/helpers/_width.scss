@@ -1,0 +1,64 @@
+.full {
+  width: 100%;
+}
+
+.t-full {
+  @include screen($tablet, $desktop - 1) {
+    width: 100%;
+  }
+}
+
+.d-full {
+  @include min-screen($desktop) {
+    width: 100%;
+  }
+}
+
+.one-third {
+  width: 33.3333%;
+}
+
+.t-one-third {
+  @include screen($tablet, $desktop - 1) {
+    width: 33.3333%;
+  }
+}
+
+.d-one-third {
+  @include min-screen($desktop) {
+    width: 33.3333%;
+  }
+}
+
+.two-third {
+  width: 66.6666%;
+}
+
+.t-two-third {
+  @include screen($tablet, $desktop - 1) {
+    width: 66.6666%;
+  }
+}
+
+.d-two-third {
+  @include min-screen($desktop) {
+    width: 66.6666%;
+  }
+}
+
+.one-half {
+  width: 50%;
+}
+
+.t-one-half {
+  @include screen($tablet, $desktop - 1) {
+    width: 50%;
+  }
+}
+
+.d-one-half {
+  @include min-screen($desktop) {
+    width: 50%;
+  }
+}
+

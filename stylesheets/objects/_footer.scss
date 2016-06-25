@@ -1,0 +1,30 @@
+.Footer {
+  background-color: $main-color;
+
+  @media print {
+    display: none;
+  }
+}
+
+.Footer-content {
+  text-align: center;
+  
+  span {
+    color: $white;
+  }
+}
+
+.Footer-social {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  li {
+    margin-right: 55px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

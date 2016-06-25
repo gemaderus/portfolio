@@ -1,0 +1,19 @@
+/*
+
+Link
+----
+
+Links styles.
+
+*/
+
+a {
+    color: $main-color;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: current-color;
+    }
+}

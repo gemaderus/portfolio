@@ -16,12 +16,16 @@
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="shortcut icon" href="/favicon.ico">
+  <script src="/assets/modernizr.js"></script>
 </head>
 <body>
+    <%= render :partial => 'partial/header' %>
     
     <%= yield %>
 
+    <%= render :partial => 'partial/footer' %>
     
+    <script src="/assets/main.js" async></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -30,7 +34,6 @@
 
       ga('create', 'UA-44867836-1', 'gemaderus.com');
       ga('send', 'pageview');
-
     </script>
   </body>
 </html>

@@ -1,0 +1,66 @@
+.Header {
+  background-color: $main-color; 
+  position: relative;
+
+  @media screen and (min-width: $desktop) {
+    border-bottom: 0;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.Main-logo {
+  text-align: center;
+
+  h1 {
+    color: $white;
+    
+    span {
+      font-weight: 400;
+    }
+  }
+
+  a {
+    color: $white;
+    font-size: 20px;
+  }
+}
+
+.Header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Button--mobile {
+  svg {
+    fill: $white;
+    vertical-align: middle;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.Button--close {
+  display: none;
+}
+
+.is-open {
+
+  .Navigation, .Button--close {
+    display: flex;
+  }
+
+  .Button--close {
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
+  
+  .Button--open {
+    display: none;
+  }
+}

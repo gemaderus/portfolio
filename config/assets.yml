@@ -1,5 +1,12 @@
 gzip_assets: on
-    
+
+javascripts:
+  main:
+    - javascript/jquery.js
+    - javascript/main.js
+  modernizr:
+    - javascript/modernizr.js
+ 
 stylesheets:
   main:
     - public/stylesheets/style.css

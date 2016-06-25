@@ -31,13 +31,11 @@ This library is divided in the following sections:
 /* 2. Core */
 
 @import "core/settings";
-@import "core/functions";
 @import "core/mixins";
 
 
 /* 4. Base */
 
-@import "base/fonts";
 @import "base/global";
 @import "base/lists";
 @import "base/headings";
@@ -63,7 +61,6 @@ This library is divided in the following sections:
 @import "helpers/align";
 @import "helpers/clearfix";
 @import "helpers/visibility";
-@import "helpers/no-scroll";
 @import "helpers/white-spacing";
 @import "helpers/width";
 @import "helpers/font-sizes";

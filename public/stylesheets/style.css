@@ -729,13 +729,16 @@ Icons classes built on sprites or svg. Use the i tag as acronym of icon. Hilario
 
 .Main-logo {
   text-align: center; }
-.Main-logo h1 {
-  color: white; }
-.Main-logo h1 span {
-  font-weight: 400; }
 .Main-logo a {
   color: white;
   font-size: 20px; }
+
+.Logo h1 {
+  color: white; }
+.Logo h1 span {
+  font-weight: 400; }
+.Logo:hover {
+  text-decoration: none; }
 
 .Header-content {
   display: flex;

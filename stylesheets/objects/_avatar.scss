@@ -2,13 +2,12 @@
   border-radius: 50%;
   display: block;
   height: 100px;
-  margin-bottom: 30px;
   margin: auto;
+  margin-bottom: 30px;
   width: 100px;
 
   @media all and (min-width: $tablet) {
     height: 250px;
-    margin-bottom: 30px;
     width: 250px;
   }
 }

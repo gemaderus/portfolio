@@ -10,7 +10,7 @@ gem 'foreman'
 gem 'json'
 gem 'rb-fsevent', '~> 0.9'
 gem 'net-ssh'
-gem 'rake'
+gem 'rake', '12.0.0'
 
 group :development, :test do
   gem 'guard-livereload'

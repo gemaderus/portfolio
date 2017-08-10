@@ -1,4 +1,4 @@
-ruby '2.1.5'
+ruby '2.4.1'
 
 source 'https://rubygems.org'
 
@@ -7,7 +7,7 @@ gem 'sinatra-contrib'
 gem 'rack-contrib', :require => 'rack/contrib'
 gem 'thin'
 gem 'foreman'
-gem 'json', '~> 1.7.7'
+gem 'json'
 gem 'rb-fsevent', '~> 0.9'
 gem 'net-ssh'
 gem 'rake'
